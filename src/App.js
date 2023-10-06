@@ -78,7 +78,8 @@ export default function App() {
 
   const nameClickHandler = (e) => {
     e.preventDefault();
-    alert("Kianna M. Reyes");
+    let name = "Kianna M. Reyes";
+    setDisp(name);
   }
 
   return (
@@ -90,7 +91,7 @@ export default function App() {
           <CalcButton label={7} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={8} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={9} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
-          <CalcButton label={"+"} onClick={clearClickHandler} buttonClassName={'CalcButtonOpe'} />
+          <CalcButton label={"+"} onClick={operatorClickHandler} buttonClassName={'CalcButtonOpe'} />
           <CalcButton label={4} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={5} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
           <CalcButton label={6} onClick={numberClickHandler} buttonClassName={"CalcButtonNum"}/>
@@ -113,3 +114,5 @@ export default function App() {
     </div>
   );
 }
+
+
